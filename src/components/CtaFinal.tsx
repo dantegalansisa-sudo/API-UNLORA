@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import RevealText from './RevealText';
 import MagneticButton from './MagneticButton';
+import WhatsAppIcon from './WhatsAppIcon';
 import { WHATSAPP_URL } from '../data/services';
 import { EASINGS } from '../utils/easings';
 
@@ -28,7 +29,7 @@ export default function CtaFinal() {
           transition={{ duration: 0.7, delay: 0.55, ease: EASINGS.smooth }}
         >
           <MagneticButton href={WHATSAPP_URL} className="btn-white">
-            Hablar por WhatsApp
+            <WhatsAppIcon size={18} /> Hablar por WhatsApp
           </MagneticButton>
         </motion.div>
       </div>

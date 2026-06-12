@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 import { WHATSAPP_URL } from '../data/services';
 
 export default function FloatingWhatsApp() {
@@ -16,7 +16,7 @@ export default function FloatingWhatsApp() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.92 }}
     >
-      <MessageCircle size={28} strokeWidth={2.2} />
+      <WhatsAppIcon size={30} />
     </motion.a>
   );
 }

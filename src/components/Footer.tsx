@@ -1,4 +1,6 @@
-import { WHATSAPP_URL } from '../data/services';
+import { MapPin } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL, PHONE_DISPLAY, ADDRESS } from '../data/services';
 
 export default function Footer() {
   return (
@@ -31,17 +33,33 @@ export default function Footer() {
               <li><a href="#como-funciona">Cómo funciona</a></li>
               <li><a href="#recarga">Recargar crédito</a></li>
               <li><a href="#por-que">Por qué nosotros</a></li>
+            </ul>
+          </div>
+
+          <div className="footer__col">
+            <h4>Contacto</h4>
+            <ul>
               <li>
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                  WhatsApp
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__contact"
+                >
+                  <WhatsAppIcon size={16} /> {PHONE_DISPLAY}
                 </a>
+              </li>
+              <li>
+                <span className="footer__contact footer__contact--static">
+                  <MapPin size={16} /> {ADDRESS}
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer__bottom">
-          <span>© 2026 UNLORA. Todos los derechos reservados.</span>
+          <span>© 2026 UNLORA · Higüey, República Dominicana. Todos los derechos reservados.</span>
           <span className="footer__nexix">
             Powered by <a href="#">NEXIX Tech Studio</a>
           </span>

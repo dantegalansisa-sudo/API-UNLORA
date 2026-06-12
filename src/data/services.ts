@@ -60,4 +60,6 @@ export const SERVICES: Service[] = [
   },
 ];
 
-export const WHATSAPP_URL = 'https://wa.me/1809XXXXXXX';
+export const WHATSAPP_URL = 'https://wa.me/18297202454';
+export const PHONE_DISPLAY = '+1 (829) 720-2454';
+export const ADDRESS = 'Higüey, La Altagracia, República Dominicana';

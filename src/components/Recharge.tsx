@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Landmark, Copy, Check, Coins } from 'lucide-react';
 import RevealText from './RevealText';
 import MagneticButton from './MagneticButton';
+import WhatsAppIcon from './WhatsAppIcon';
 import { WHATSAPP_URL } from '../data/services';
 import { EASINGS } from '../utils/easings';
 
@@ -125,7 +126,7 @@ export default function Recharge() {
           transition={{ duration: 0.6, delay: 0.2, ease: EASINGS.smooth }}
         >
           <MagneticButton href={WHATSAPP_URL} className="btn-primary">
-            Recargar por WhatsApp
+            <WhatsAppIcon size={18} /> Recargar por WhatsApp
           </MagneticButton>
         </motion.div>
       </div>
